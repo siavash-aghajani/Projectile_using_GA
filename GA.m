@@ -109,7 +109,7 @@ plot(l,makans,'go','MarkerEdgeColor','k',...
 hold on
 
 if(makans>h)
- shart1=sprintf('az sotton rad shod dar noqtheye [%f,%f]',l,makans);
+ shart1=sprintf('cross above wall at [%f,%f]',l,makans);
  shart1
 
 end
@@ -124,7 +124,7 @@ plot(makant,0,'go','MarkerEdgeColor','k',...
 
 if(makant>=L-r && makant<=L+r)
  
-shart2= sprintf('dakhele zarf shod dar noqtheye [%f,%f]',makant,0);
+shart2= sprintf('land in the Tub at [%f,%f]',makant,0);
 shart2
 end
 
@@ -144,4 +144,4 @@ for t=0:.01:100
    grid on;
 end
 
-disp(sprintf('Behtarin [zavie,sorat]: [%f,%f] ',BestSolution(1),BestSolution(2)))
+disp(sprintf('Best [thetha,velocity]: [%f,%f] ',BestSolution(1),BestSolution(2)))
