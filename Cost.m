@@ -1,7 +1,7 @@
 function T=Cost(gama ,v0,fr,L,l,h,g,r,mass)
 conds=0;
 condt=0;
-% mikhore be sotoon :????
+% ball cross above wall :????
 rr=roots([v0*cos(gama) (-fr*v0*cos(gama)/mass)-l  ]);
 [~,makans]=law(gama,v0,rr,fr,mass);
 
@@ -11,7 +11,7 @@ else
     conds=h-makans;
 end
 
- %mikhore to tasht ???
+ % ball land at Tub ???
  R=roots ([.5*g  -sin(gama)*v0  fr*v0*sin(gama)/mass]); 
  sort(R);
  [makant,~]=law(gama,v0,R(1),fr,mass);
